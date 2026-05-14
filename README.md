@@ -1,18 +1,35 @@
-👥 HR Attrition Analysis
-
-A complete end-to-end Data Analytics & Machine Learning project to predict and understand employee attrition using Python, Scikit-learn, and Power BI.
-
+👥 HR Employee Attrition Analysis & Prediction
+Show Image
 Show Image
 Show Image
 Show Image
 Show Image
 
-📌 Overview
-Employee attrition is one of the most costly challenges for organizations. This project analyzes IBM's HR dataset of 1,470 employees to uncover the key factors driving attrition and builds a Random Forest ML model to predict which employees are at risk of leaving.
+An end-to-end HR analytics project analysing why employees leave IBM, built a Machine Learning model with 83.3% accuracy to predict attrition, and created an interactive Power BI dashboard with actionable retention recommendations.
 
-🖥️ Power BI Dashboard
+
+📌 Business Problem
+Employee attrition costs companies 6–9 months of an employee's salary in recruitment and training costs. IBM's HR team needs to:
+
+Understand why employees are leaving
+Identify which employees are at highest risk of leaving
+Take proactive action before losing valuable talent
+
+This project answers all these questions using Python EDA, Machine Learning, and Power BI.
+
+🎯 Key Business Insights
+#InsightBusiness Recommendation1Sales dept has 40%+ attrition rate — highest of all departmentsIntroduce performance bonuses & career growth plans2Employees working overtime are 3x more likely to leaveCap overtime hours, hire additional staff3Employees earning below average salary leave mostSalary revision for bottom 20% earners418-25 age group has the highest attrition rateBetter growth opportunities & mentorship programs5First 2 years are the highest risk period for attritionStronger onboarding & buddy programs6Low job satisfaction (score 1) directly correlates with attritionQuarterly satisfaction surveys with action plans
+
+🤖 Machine Learning Model
+ModelAccuracyROC-AUC ScoreLogistic Regression~85%~0.75Random Forest ✅83.3%0.82+
+Random Forest was selected as the final model because it has a higher ROC-AUC score — meaning it is better at correctly identifying employees who will actually leave, which is the most important metric for HR teams.
+
+📊 Dashboard Preview
+Executive Overview
 Show Image
+Deep Dive Analysis
 Show Image
+ML Model Insights
 Show Image
 
 📈 Python Analysis Charts
@@ -84,7 +101,12 @@ Interactive Dashboard (Power BI — 3 pages)
 Business Recommendations
 
 📂 Dataset
-PropertyDetailsSourceKaggle — IBM HR Analytics Employee Attrition DatasetSize1,470 employees × 35 featuresTarget VariableAttrition (Yes / No)Attrition Rate16.1% (237 out of 1,470 employees left)
+
+Source: Kaggle — IBM HR Analytics Employee Attrition Dataset
+Size: 1,470 employees × 35 features
+Target variable: Attrition (Yes/No)
+Attrition rate: 16.1% (237 out of 1,470 employees left)
+
 
 🛠️ Tech Stack
 ToolPurposePython 3.xCore programmingPandasData cleaning & analysisNumPyNumerical operationsMatplotlibCharts and visualisationsSeabornEnhanced visualisationsScikit-learnMachine Learning modelsPower BIInteractive dashboardJupyter NotebookAnalysis environment
@@ -113,10 +135,8 @@ Resistant to overfitting compared to a single decision tree
 Provides feature importance scores to explain which factors drive attrition
 Works well with imbalanced datasets like this one (16% attrition)
 
-SplitEmployeesTraining set (80%)1,176 employeesTesting set (20%)294 employees
-
-Stratified split used to maintain the same 16% attrition ratio in both sets.
-
+Train/Test Split: 80% training (1,176 employees) / 20% testing (294 employees)
+Stratified split used to maintain the same 16% attrition ratio in both sets
 
 🔮 Future Scope
 
@@ -131,3 +151,6 @@ Stratified split used to maintain the same 16% attrition ratio in both sets.
 Vanshika Gupta — Final year B.Tech student passionate about Data Analytics, Business Intelligence & Machine Learning.
 Skills: Python · Pandas · SQL · Power BI · Scikit-learn · Matplotlib · Seaborn · Excel
 📧 Connect with me on LinkedIn | GitHub
+
+
+⭐ If you found this project useful, consider giving it a star!
